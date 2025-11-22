@@ -1,11 +1,12 @@
 cff-version: 1.2.0
-title: "Neuroimaging Project"
+title: "PET — SUVR + Partial-Volume Correction (PETPVE12) on OASIS-3"
 message: "If you use this project, please cite it as below."
 type: software
 authors:
   - family-names: "Andrade Rey"
     given-names: "Rene"
     orcid: "https://orcid.org/0000-0001-5627-579X"
+abstract: "Compute regional SUVRs and show the effect of partial-volume correction (PETPVE12) on a tiny OASIS-3 PET subset."
 license: "MIT"
-repository-code: "https://github.com/andraderenew/<repo>"
+repository-code: "https://github.com/andraderenew/pet_suvr-pvc_spm_petpve12_oasis3"
 url: "https://scholar.google.es/citations?hl=es&user=Nl3ApFEAAAAJ"
