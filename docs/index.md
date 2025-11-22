@@ -1,45 +1,44 @@
-# <Project Title>: <Modality & Tools> on <Dataset>
+# PET: SUVR + Partial-Volume Correction (PETPVE12) on OASIS-3
 
-### What this project asks (2–3 lines)
-A crisp statement of the scientific question and why it matters.
+**Goal:** Compute regional SUVRs and show the impact of partial-volume correction (PVC) on a tiny OASIS-3 PET subset.
+
+---
+
+## Snapshot
+- **Dataset:** OASIS-3 (PET + MRI) — tiny subset
+- **Local subset:** <N scans> · **Disk:** download minimally (a few scans)
+- **Tools:** SPM12 (coreg/normalize), PETPVE12 (PVC)
+- **Status:** <planned / in progress / complete>
+- **Last updated:** <YYYY-MM-DD>
 
 ---
 
 ## Data
-- **Source:** <dataset name + link> · **License/DUA:** <text>
-- **Subset used:** <n subjects/sessions> · **Approx disk:** <X GB> (raw) / <Y GB> (derivatives)
-- **Layout:** BIDS (if applicable)
-
-> We **do not** commit raw data to the repository. If needed, link to the public source and keep large artifacts out of git. (GitHub looks for an entry file in `/docs` such as `index.md` when you publish Pages from that folder.)
+- **Source & DUA:** Link to OASIS-3; note access steps.  
+- **What I downloaded:** tracer, reference region choice.  
+- **Layout:** PET/T1 per subject.
 
 ---
 
 ## Pipeline (high-level)
-Preprocessing → Analysis → Statistics → QC  
-Tools: FreeSurfer / FSL / SPM + CAT12 / Brainstorm / EEGLAB / FieldTrip / BRAPH / MATLAB
-
-Confounds handled (examples): motion, age/sex, site.
+1) Coregister PET→T1; normalize  
+2) Compute SUVR (define reference region)  
+3) PVC with PETPVE12; recompute regional values  
+4) Compare SUVR vs SUVR+PVC
 
 ---
 
-## Results
-- 2–3 key figures (see `results/figures/`)
-- Report thresholds (e.g., FWE/FDR; cluster-permutation for M/EEG) and effect sizes.
+## Results (to be filled)
+- Figure: SUVR maps (with vs without PVC)  
+- Table: regional SUVR changes
 
 ---
 
 ## Reproducibility
-- **Versions:** see `env/TOOL_VERSIONS.md`
-- **Steps to re-run:** bullet list of actions (no raw data)
-- **Known limits:** sample size, heterogeneity, compute
+- Versions in `env/TOOL_VERSIONS.md`.  
+- Steps: “Coreg/normalize → SUVR → PVC → regional table → figures.”  
+- Limitations: tiny subset, tracer-specific effects.
 
 ---
 
-## Cite this work
-A `CITATION.cff` is included—GitHub renders a “Cite this repository” box automatically.  
-When you cut a Release and connect to Zenodo, add the DOI badge here.
-
----
-
-### Author & links
-**Rene Andrade Rey** · 🧪 ORCID: https://orcid.org/0000-0001-5627-579X · 🌐 Google Scholar: https://scholar.google.es/citations?hl=es&user=Nl3ApFEAAAAJ
+**Author:** Rene Andrade Rey · 🧪 ORCID: https://orcid.org/0000-0001-5627-579X · 🌐 Scholar: https://scholar.google.es/citations?hl=es&user=Nl3ApFEAAAAJ
