@@ -1,6 +1,6 @@
 # PET — SUVR + Partial-Volume Correction (PETPVE12) on OASIS-3
 [![License](https://img.shields.io/github/license/andraderenew/pet_suvr-pvc_spm_petpve12_oasis3)](LICENSE)
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.XXXXXXX-blue)](#cite-this-work)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.17715104-blue)](https://doi.org/10.5281/zenodo.17715104)
 [![Pages](https://img.shields.io/website?url=https%3A%2F%2Fandraderenew.github.io%2Fpet_suvr-pvc_spm_petpve12_oasis3%2F)](https://andraderenew.github.io/pet_suvr-pvc_spm_petpve12_oasis3/)
 ![Release](https://img.shields.io/github/v/release/andraderenew/pet_suvr-pvc_spm_petpve12_oasis3?include_prereleases)
 ![Last commit](https://img.shields.io/github/last-commit/andraderenew/pet_suvr-pvc_spm_petpve12_oasis3)
